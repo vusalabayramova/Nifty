@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  position: absolute;
+  z-index: 55;
+  width: 100%;
+}
+#header .left {
+  height: 80px;
+  width: auto;
+}
+#header .left img {
+  width: auto;
+  height: 100%;
+}
+#header .right .dropdown {
+  position: relative;
+  display: inline-block;
+  transition: 0.4s;
+  padding: 10px 0;
+}
+#header .right .dropdown:hover {
+  background-color: #fff;
+}
+#header .right .dropdown:hover .main {
+  color: #181818;
+}
+#header .right .dropdown:hover .dp-content {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+#header .right .dropdown .main {
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px 20px;
+  position: relative;
+}
+#header .right .dropdown .main::before {
+  content: "";
+  position: absolute;
+  background-color: #ccc;
+  height: 1px;
+  right: 43%;
+  top: 40px;
+  width: 7px;
+  transition: 0.4s;
+}
+#header .right .dropdown .main::after {
+  content: "";
+  position: absolute;
+  background-color: #ccc;
+  height: 1px;
+  left: 43%;
+  top: 40px;
+  width: 7px;
+  transition: 0.4s;
+}
+#header .right .dropdown .main:hover::before {
+  background-color: #ef5e5e;
+  width: 30px;
+}
+#header .right .dropdown .main:hover::after {
+  width: 30px;
+  background-color: #ef5e5e;
+}
+#header .right .dropdown .bf::before {
+  display: none;
+}
+#header .right .dropdown .bf::after {
+  display: none;
+}
+#header .right .dropdown .bf:hover::after {
+  display: block;
+  width: 32px;
+}
+#header .right .dropdown .bf:hover::before {
+  display: block;
+  width: 32px;
+}
+#header .right .dropdown .dp-content {
+  position: absolute;
+  background-color: #fff;
+  width: 250px;
+  top: 40%;
+  transition: 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+}
+#header .right .dropdown .dp-content a {
+  text-decoration: none;
+  color: #181818;
+  display: block;
+  padding: 10px;
+  transition: 0.4s;
+  text-align: left;
+}
+#header .right .dropdown .dp-content a span {
+  opacity: 0;
+  transition: 0.4s;
+  display: inline-block;
+  margin-right: 5px;
+}
+#header .right .dropdown .dp-content a:hover {
+  color: #ef5e5e;
+  opacity: 1;
+}
+#header .right .dropdown .dp-content a:hover span {
+  opacity: 1;
+  transform: translateX(3px);
+  color: #ef5e5e;
+}
+#header .right .dropdown .third {
+  width: 40rem;
+  padding: 10px;
+  margin-left: -30rem;
+}
+#header .right .dropdown .third h4 {
+  color: #ef5e5e;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: -3px;
+}
+#header .right i {
+  color: #fff;
+  font-size: 15px;
+  margin-left: 10px;
+}
+#header .right i:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}/*# sourceMappingURL=header.css.map */
